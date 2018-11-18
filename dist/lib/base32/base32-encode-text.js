@@ -10,12 +10,12 @@ function base32EncodeText(text) {
         const seek = blockIndex * 40;
         const blockBit = bitString.substr(seek, 40);
         const numberOfGroups = 8; // There must be 8 groups in a block
-        group: for (let groupIndex = 0; groupIndex < numberOfGroups; groupIndex++) {
+        for (let groupIndex = 0; groupIndex < numberOfGroups; groupIndex++) {
             const groupSeek = groupIndex * 5;
             let groupBit = blockBit.substr(groupSeek, 5);
             if (groupBit.length === 0) {
                 returnString += "=";
-                continue group;
+                continue;
             }
             else if (groupBit.length !== 5) {
                 groupBit = groupBit.padEnd(5, '0');

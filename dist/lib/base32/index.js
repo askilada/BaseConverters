@@ -4,3 +4,4 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./base32-encode-text"));
+__export(require("./base32-decode-text"));
