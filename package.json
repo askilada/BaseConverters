@@ -1,14 +1,11 @@
 {
-  "name": "base32",
+  "name": "@askilada/base-converter",
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc"
   },
   "license": "MIT",
-  "dependencies": {
-    "@askilada/hotp": "https://github.com/askilada/HOTP.git"
-  },
   "devDependencies": {
     "typescript": "^3.1.6"
   }
