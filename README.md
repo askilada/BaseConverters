@@ -7,7 +7,15 @@ This repository is for my work understanding JS and som standards better. As of 
   * base32 -> text
 
 ## Install
-coming soon
+    yarn add @askilada/base-converter
+    # or
+    npm install @askilada/base-converter --save
+
+## Usage
+    import {Base32} from '@askilada/base-converter'
+
+    Base32.base32Encode("AAAAA") // IFAUCQKB
+
 
 # TODO
 
